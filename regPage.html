@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> FanStories - registration </title>
+        <link rel="stylesheet" type="text/css" href="normalize.css" />
+    </head>
+    <body>
+        <style>
+            body{
+                background-color: #01020f;
+            }
+        </style>
+        <center>
+        <div class="regBlock">
+            <div class="tBlock">
+            <p><a href="index.html" class="logo"><img src="images/logo.jpg" width="10%" ></a></p>
+            <a href="index.html" class="AHA">Already have account?</a>
+            </div>
+            <style>
+                .tBlock{
+                     display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    margin: 10px;
+                }
+                .regBlock{
+                    border: 0px solid #505050;
+                    border-radius: 5px;
+                    align-items: center;
+                    width: 500px;
+                    height: 500px;
+                    margin-top: 100px;
+                    background-color: #1c1d26;
+                    color: aliceblue;
+                    justify-content: space-between;
+                }
+                .AHA{
+                    position: static;
+                    right: 1;
+                    margin-right: 5.9%;
+                    color: aqua;
+                    flex-basis: 90%;
+                }
+                .logo{
+                    position: static;
+                    left: 1;
+                }
+                input{
+                    background: #151515;
+                    border: 1px solid #303030;
+                    border-radius: 3px;
+                    width: 100%
+                }
+                a{
+                    text-decoration: none;
+                }
+                .container{
+                    display: flex;
+                    width: 75%;
+                }
+                .SB{
+                    margin-top: 10px;
+                    width: 101.75%;
+                    background: rgba(0,0,0,0);
+                    color: white;
+                    border: 1px solid #303030;
+                    height: 30px;
+                }
+                .SB:hover{
+                    background: #151515;
+                    cursor: pointer;
+                }
+                p{
+                    
+                }
+            </style>
+            <div class="container">
+            <form class="form">
+                <h2> Join the platform ror somthing</h2>
+                <br>
+                <p>*Name</p>
+                <input type="name" placeholder="Name">
+                <p>*E-mail</p>
+                <input type="email" placeholder="E-mail">
+                <p>*Password</p>
+                <input type="password" placeholder="Password">
+                <input type="checkbox" checked="">
+                <label class="text" for="text">By creating an account, you agree to our Terms of Service and Privacy Policy.</label>
+                <button class="SB">Create account</button>
+            </form>
+            </div>
+        </div>
+            
+        </center>
+    </body>
+</html>

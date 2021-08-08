@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html id="0">
+    
+    <head>
+        <title> FanStory - Explore </title>
+        <meta name="description" content="Здесь вы можете прочитать истории написанные такими же обычными людями как и вы или попробовать себя в роли писателя" >
+        <meta name="keywords" content="Книги, ранобэ, фанфики, романы, аниме, манга, ranobe, books, fanfiction, fan fiction" >
+        <link rel="stylesheet" type="text/css" href="normalize.css" />
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+    </head>
+    
+    <body>
+        
+        <div class="shadowLS" id="1">
+            <style>
+                .shadowLS{
+                    display: flex;
+                    position: fixed;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0,0,0,0.7);
+                    z-index: 8888;
+                    justify-content:space-around;
+                    visibility: hidden;     
+                }
+            </style>
+            <div class="clicker" onclick="signInClose()">
+            </div>
+            <div class="logScr">
+                <div class="signInTxt">
+                    <h1>Sign In</h1>
+                </div>
+                <div class="container">
+                    
+                    <form>
+                        <h3>* E - mail</h3>
+                        <input type="text" placeholder="E-mail" class="mailF" id="mailF">
+                        <h3>* Password</h3>
+                        <input type="password" placeholder="Password" class="passF" id="passF">
+                        <button class="signIn" type="submit"> Sign In </button>
+                    </form>
+                
+                </div>
+                <div class="or">
+                        <p class="pp">Not a member yet? <a class="hr" href="regPage.html">Sign up</a></p>
+                </div>
+                <script>
+                    
+                </script>
+                <style>
+                .signInTxt{
+                    margin-top: 20px;
+                    display: flex;
+                    position: absolute;
+                    justify-content: center;
+                    width: 100%;
+                }
+                .signIn{
+                    width: 101.75%;
+                    border-radius: 3px;
+                    background-color: rgba(0,0,0,0);
+                    border: 1px solid #505050;
+                    margin-top: 20px;
+                    height: 35px;
+                    color: white;
+                }
+                    .signIn:hover{
+                        background: #151515;
+                        cursor: pointer;
+                    }
+                h1{
+                    color: white;
+                }
+                h3{
+                    color: white;
+                }
+                .mailF{
+                    width: 96%;
+                    color: white;
+                    background-color: #151515;
+                    border: 1px solid #505050;
+                    border-radius: 5px;
+                    height: 30px;
+                    padding-left: 20px;
+                }
+                .passF{
+                    width: 96%;
+                    color: white;
+                    background-color: #151515;
+                    border: 1px solid #505050;
+                    border-radius: 5px;
+                    height: 30px;
+                    padding-left: 20px;
+                }
+                .clicker{
+                    width: 100%;
+                    height: 100%;
+                }
+                .logScr{
+                    position: fixed;
+                    display: flex;
+                    background-color: #262424;
+                    height: 430px;
+                    width: 500px;
+                    z-index: 9999;
+                    border-radius: 10px;
+                    align-self: center;
+                }
+                .or{
+                    display: flex;
+                    height: 75px;
+                    position: absolute;
+                    border-bottom-left-radius: 10px; 
+                    border-bottom-right-radius: 10px; 
+                    border-top: 1px solid #505050;
+                    background-color: #1a1a1a;
+                    align-self: flex-end;
+                    width: 100%;
+                    justify-content: center;
+                }
+                .pp{
+                    align-self: center;
+                    font-size: 18px;
+                }
+                .hr{
+                    align-self: center;
+                    color: aqua;
+                    text-decoration: none;
+                }
+                .container{
+                    align-self: stretch;
+                    width: 100%;
+                    margin: 50px;
+                    margin-top: 80px;    
+                }
+            </style>
+            </div>
+        </div>
+        
+        <header class="topBar">
+            <div class="logo">
+                <center>
+                    <p><a href="index.html"> <img src="images/logo.jpg" height="50px" ></a></p>
+                </center>
+            </div>
+            
+            <div class="searchBar">
+                <center>
+                    <input class="searchForm" type="text" name="searchForm" value="" placeholder="Search">
+                </center>
+            </div>
+            
+            <button name="signUp" class="signInButton" onclick="signIn()">sign in
+            </button>
+            <script>
+                    function signIn(){
+                        var s = document.getElementById(1);
+                        var b = document.getElementById(0);
+                        s.style.visibility = 'visible';
+                        b.style.overflow = 'hidden';
+                    }
+                    function signInClose(){
+                        var s = document.getElementById(1);
+                        var b = document.getElementById(0);
+                        s.style.visibility = 'hidden';
+                        b.style.overflow = 'visible';
+                    }
+                    function menu(){
+                        var s = document.getElementById('22').style;
+                        var b = document.getElementById('202').style;
+                        if (s.visibility == ('hidden')){
+                            s.visibility = 'visible';
+                            s.backgroundColor = '#303030';
+                            b.backgroundColor = '#303030';
+                        }
+                        else{
+                            s.visibility = 'hidden';
+                            s.backgroundColor = 'rgba(0,0,0,0)';
+                            b.backgroundColor = 'rgba(0,0,0,0)';
+                        }
+                    }
+                </script>
+            
+            <button class="menu" id="202">
+                <center>
+                  <img src="images/menuButton.png" height="50px" onclick="menu()">
+                </center>
+            </button>
+        </header>
+        
+        <div class="challanges">
+            <div class="challange">
+            challange
+            </div>
+            <div class="challange">
+            challange
+            </div>
+            <div class="challange">
+            challange
+            </div>
+            <div class="challange">
+            challange
+            </div>
+            
+            
+            <style>
+                .challange{
+                    display: flex;
+                    margin: 10px;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 20px;
+                    background-color: #1a1a1a;
+                    width: 200px;
+                    height: 180px;
+                    border: 1px solid #505050;
+                    border-radius: 10px;
+                    color: aliceblue;
+                }
+                .challange:hover{
+                    cursor: pointer;
+                    border: 1px solid aqua;
+                    background-color: #303030
+                }
+                .challanges{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 50px;
+                    padding: 10px;
+                    height: 200px
+                }
+            </style>
+        </div>
+        
+        <div class="addB">
+    
+            <div class="addScr">
+            </div>
+            
+            <style>
+                .addB{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 10px;
+                    height: 200px;
+                }
+                .addScr{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 10px;
+                    border: 2px solid #505050;
+                    height: 150px;
+                    width: 800px;
+                    background-image: url(/images/gory_tuman_oblaka_137375_1920x1080.jpg);
+                    background-position: top 75%;
+                    background-size: cover;
+                }
+            </style>
+            
+        </div>
+        
+        <nav>
+            <div class="filter">
+                filter
+            </div>
+            <div class="filter">
+                filter
+            </div>
+            <div class="filter">
+                filter
+            </div>
+            <div class="filter">
+                filter
+            </div>
+            <div class="filter">
+                filter
+            </div>
+            <div class="filter">
+                filter
+            </div>
+            <div class="filter">
+                filter
+            </div>
+            <style>
+                
+                .filter{
+                    
+                    color:aliceblue;
+                    align-items: center;
+                    justify-content: center;
+                    display: flex;
+                    margin: 10px;
+                    margin-left: 30px;
+                    height: 60px;
+                    width: 100px;
+                    background: #303030;
+                    border-radius: 5px;
+                    border: 1px solid #303030;
+                    
+                }
+                
+                .filter:hover{
+                    cursor:pointer;
+                    border: 1px solid aqua;
+                    background-color: #202020;
+                }
+                
+                nav{
+                    
+                    position: sticky;
+                    top: 50px;
+                    border-bottom: 2px solid #505050;
+                    height: 75px;
+                    justify-content: center;
+                    align-items: center;
+                    display: flex;
+                    background-color: rgba(0,0,0,0.8);
+                    flex-wrap: nowrap;
+                    
+                }
+                
+            </style>
+        </nav>
+        
+        <div class="menuB" id="22">
+            <div class="tools">
+                <div class="tool">
+                    tool
+                </div>
+                <div class="tool">
+                    tool
+                </div>
+                <div class="tool">
+                    tool
+                </div>
+                <div class="tool">
+                    tool
+                </div>
+                <div class="tool">
+                    tool
+                </div>
+                <div class="tool">
+                    tool
+                </div>
+                <div class="tool">
+                    tool
+                </div>
+                <div class="tool">
+                    tool
+                </div>
+            </div>
+                
+
+            <style>
+                .tool{
+                    display: flex;
+                    width: 200px;
+                    color: aliceblue;
+                    height: 50px;
+                    align-items: center;
+                    padding-left: 25px;
+                }
+                .tool:hover{
+                    background-color: aqua;
+                    cursor: pointer;
+                }
+                .menuB{
+                    display: flex;
+                    position: fixed;
+                    margin-top: 50px;
+                    height: 400px;
+                    background-color: aqua;
+                    align-self: flex-end;
+                    width: 200px;
+                }
+                .tools{
+                    width: 100%;
+                    height: 400px;
+                }
+            </style>
+            <script>
+                {var s = document.getElementById('22');
+                 s.style.visibility = 'hidden';
+                }
+            </script>
+        </div>
+       
+        <div class="contentReview">
+          <div class="maya" name="M" onclick="window.location.href = '/contentViewPage.html'"> 
+              <div class="description"> НЕОБЫЧАЙНОЕ ПРИКЛЮЧЕНИЕ, БЫВШЕЕ С ВЛАДИМИРОМ МАЯКОВСКИМ ЛЕТОМ НА ДАЧЕ
+              </div>
+          </div>
+            <div class="maya" onclick="window.location.href = '/erorPage.html'"> 
+              <div class="description"> description 
+              </div>
+          </div>
+            <div class="maya" onclick="window.location.href = '/erorPage.html'"> 
+              <div class="description"> description 
+              </div>
+          </div>
+            <div class="maya" onclick="window.location.href = '/erorPage.html'"> 
+              <div class="description"> description 
+              </div>
+          </div>
+            <div class="maya" onclick="window.location.href = '/erorPage.html'"> 
+              <div class="description"> description 
+              </div>
+          </div>
+            <div class="maya" onclick="window.location.href = '/erorPage.html'"> 
+              <div class="description"> description 
+              </div>
+          </div>
+            <div class="maya" onclick="window.location.href = '/erorPage.html'"> 
+              <div class="description"> description 
+              </div>
+          </div>
+            <div class="maya" onclick="window.location.href = '/erorPage.html'"> 
+              <div class="description"> description 
+              </div>
+          </div>
+            <div class="maya" onclick="window.location.href = '/erorPage.html'"> 
+              <div class="description"> description 
+              </div>
+          </div>
+            <div class="maya" onclick="window.location.href = '/erorPage.html'"> 
+              <div class="description"> description 
+              </div>
+          </div>
+            <div class="maya" onclick="window.location.href = '/erorPage.html'"> 
+              <div class="description"> description 
+              </div>
+          </div>
+            <div class="maya" onclick="window.location.href = '/erorPage.html'"> 
+              <div class="description"> description 
+              </div>
+          </div>
+            <div class="maya" onclick="window.location.href = '/erorPage.html'"> 
+              <div class="description"> description 
+              </div>
+          </div>
+            <div class="maya" onclick="window.location.href = '/erorPage.html'"> 
+              <div class="description"> description 
+              </div>
+          </div>
+            <div class="maya" onclick="window.location.href = '/erorPage.html'"> 
+              <div class="description"> description 
+              </div>
+          </div>
+            <div class="maya" onclick="window.location.href = '/erorPage.html'"> 
+              <div class="description"> description 
+              </div>
+          </div>
+            
+
+        
+
+            <style>
+                .description{
+                    
+                    height: 75px;
+                    display: flex;
+                    align-self: flex-end;
+                    padding: 5px;
+                    position: static;
+                    color: aliceblue;
+                    width: 100%;
+                    background-color: rgba(0,0,0,0.8);
+                    border: 1px solid #505050;
+                    border-bottom-right-radius: 10px;
+                    border-bottom-left-radius: 10px;
+                    font-size: 12px;
+                    
+                }
+                .maya{
+                    
+                    display: flex;
+                    margin: 20px;
+                    background: #151515;
+                    height: 200px;
+                    width: 150px;
+                    border-radius: 10px;
+                    border: 1px solid #505050;
+                    align-items: center;
+                    justify-content: center;
+                    
+                }
+                .contentReview{
+                    
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 89%;
+                    margin-right: 5%;
+                    margin-left: 5%;
+                    padding: 30px;
+                    
+                }
+                .maya:hover{
+                    
+                    cursor: pointer;
+                    border: 1px solid aqua;
+                    background-color: #303030;
+                    
+                }
+            </style>
+            
+        </div>
+      
+        <footer class="footer">
+            <div class = "fc">
+            <h3> 2021 </h3>
+            <h3> Tomsk Politeckhnic University</h3>
+            <h3> group:8K93</h3>
+            <h3> Danil Babinov</h3>
+            </div>
+            <style>
+                .fc{
+                    margin: 10%;
+                }
+            </style>
+        </footer>
+        
+    </body>
+</html>

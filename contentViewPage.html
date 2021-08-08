@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> FanStory - Explore </title>
+        <meta name="description" content="Здесь вы можете прочитать истории написанные такими же обычными людями как и вы или попробовать себя в роли писателя" >
+        <meta name="keywords" content="Книги, ранобэ, фанфики, романы, аниме, манга, ranobe, books, fanfiction, fan fiction" >
+        <link rel="stylesheet" type="text/css" href="normalize.css" />
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+    </head>
+    <body id="0">
+        <div class="shadowLS" id="1" onclick="signInClose()">
+            <style>
+                .shadowLS{
+                    display: flex;
+                    position: fixed;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0,0,0,0.7);
+                    z-index: 8888;
+                    justify-content:space-around;
+                    visibility: hidden;     
+                }
+            </style>
+            <div class="logScr">
+                <a href="regPage.html">Sign up</a>
+            <style>
+                .logScr{
+                    position: static;
+                    background-color: aqua;
+                    height: 300px;
+                    width: 500px;
+                    z-index: 9999;
+                    border-radius: 20px;
+                    align-self: center;
+                }
+            </style>
+            </div>
+        </div>
+        
+        <header class="topBar">
+            <div class="logo">
+                <center>
+                    <p><a href="index.html"> <img src="images/logo.jpg" height="50px" ></a></p>
+                </center>
+            </div>
+            
+            <div class="searchBar">
+                <center>
+                    <input class="searchForm" type="text" name="searchForm" value="" placeholder="Search">
+                </center>
+            </div>
+            
+            <button name="signUp" class="signInButton" onclick="signIn()">sign in
+            </button>
+            <script>
+                    function signIn(){
+                        var s = document.getElementById(1);
+                        var b = document.getElementById(0);
+                        s.style.visibility = 'visible';
+                        b.style.overflow = 'hidden';
+                    }
+                    function signInClose(){
+                        var s = document.getElementById(1);
+                        var b = document.getElementById(0);
+                        s.style.visibility = 'hidden';
+                        b.style.overflow = 'visible';
+                    }
+                    function menu(){
+                        var s = document.getElementById('22').style;
+                        if (s.visibility == ('hidden')){
+                            s.visibility = 'visible';
+                            s.backgroundColor = 'aqua';
+                        }
+                        else{
+                            s.visibility = 'hidden';
+                            s.backgroundColor = 'rgba(0,0,0,0)';
+                        }
+                    }
+                </script>
+            
+            <button class="menu" >
+                <center>
+                  <img src="images/menuButton.png" height="50px" onclick="menu()">
+                </center>
+            </button>
+        </header>
+        
+        <div class="menuB" id="22">
+            <style>
+                .menuB{
+                    position: fixed;
+                    margin-top: 50px;
+                    height: 400px;
+                    background-color: aqua;
+                    align-self: flex-end;
+                    width: 200px;
+                }
+            </style>
+            <script>
+                {var s = document.getElementById('22');
+                 s.style.visibility = 'hidden';
+                }
+            </script>
+        </div>
+        
+        <div class="content">
+            
+        <center>
+            <h2> Владимир Маяковский </h2>
+            <h1>НЕОБЫЧАЙНОЕ ПРИКЛЮЧЕНИЕ, БЫВШЕЕ С ВЛАДИМИРОМ МАЯКОВСКИМ ЛЕТОМ НА ДАЧЕ</h1>
+            <h3>(Пушкино, Акулова гора, дача Румянцева, 27 верст по Ярославской жел. дор.)</h3>
+            <div class="textBl">
+            <pre align="left">
+В сто сорок солнц закат пылал,
+в июль катилось лето,
+была жара,
+жара плыла —
+на даче было это.
+Пригорок Пушкино горбил
+Акуловой горою,
+а низ горы —
+деревней был,
+кривился крыш корою.
+А за деревнею —
+дыра,
+и в ту дыру, наверно,
+спускалось солнце каждый раз,
+медленно и верно.
+А завтра
+снова
+мир залить
+вставало солнце а́ло.
+И день за днем
+ужасно злить
+меня
+вот это
+стало.
+И так однажды разозлясь,
+что в страхе все поблекло,
+в упор я крикнул солнцу:
+«Слазь!
+довольно шляться в пекло!»
+Я крикнул солнцу:
+«Дармоед!
+занежен в облака ты,
+а тут — не знай ни зим, ни лет,
+сиди, рисуй плакаты!»
+Я крикнул солнцу:
+«Погоди!
+послушай, златолобо,
+чем так,
+без дела заходить,
+ко мне
+на чай зашло бы!»
+Что я наделал!
+Я погиб!
+Ко мне,
+по доброй воле,
+само,
+раскинув луч-шаги,
+шагает солнце в поле.
+Хочу испуг не показать —
+и ретируюсь задом.
+Уже в саду его глаза.
+Уже проходит садом.
+В окошки,
+в двери,
+в щель войдя,
+валилась солнца масса,
+ввалилось;
+дух переведя,
+заговорило басом:
+«Гоню обратно я огни
+впервые с сотворенья.
+Ты звал меня?
+Чаи́ гони,
+гони, поэт, варенье!»
+Слеза из глаз у самого —
+жара с ума сводила,
+но я ему —
+на самовар:
+«Ну что ж,
+садись, светило!»
+Черт дернул дерзости мои
+орать ему, —
+сконфужен,
+я сел на уголок скамьи,
+боюсь — не вышло б хуже!
+Но странная из солнца ясь
+струилась, —
+и степенность
+забыв,
+сижу, разговорясь
+с светилом постепенно.
+Про то,
+про это говорю,
+что-де заела Роста,
+а солнце:
+«Ладно,
+не горюй,
+смотри на вещи просто!
+А мне, ты думаешь,
+светить
+легко?
+— Поди, попробуй! —
+А вот идешь —
+взялось идти,
+идешь — и светишь в оба!»
+Болтали так до темноты —
+до бывшей ночи то есть.
+Какая тьма уж тут?
+На «ты»
+мы с ним, совсем освоясь.
+И скоро,
+дружбы не тая,
+бью по плечу его я.
+А солнце тоже:
+«Ты да я,
+нас, товарищ, двое!
+Пойдем, поэт,
+взорим,
+вспоем
+у мира в сером хламе.
+Я буду солнце лить свое,
+а ты — свое,
+стихами».
+Стена теней,
+ночей тюрьма
+под солнц двустволкой пала.
+Стихов и света кутерьма —
+сияй во что попало!
+Устанет то,
+и хочет ночь
+прилечь,
+тупая сонница.
+Вдруг — я
+во всю светаю мочь —
+и снова день трезвонится.
+Светить всегда,
+светить везде,
+до дней последних донца,
+светить —
+и никаких гвоздей!
+Вот лозунг мой —
+и солнца!</pre>
+                </div>
+            <style>
+                .content{
+                    align-self: center;
+                    width: 70%;
+                    margin-top: 200px;
+                    padding: 50px;
+                    border: 1px solid #505050;
+                    background-color: #1f1a1f;
+                }
+                pre{
+                    color: beige;
+                }
+                h2{
+                    color: beige;
+                }
+                h1{
+                    color: beige;
+                }
+                h3{
+                    color: beige;
+                }
+                .textBl{
+                    display: flex;
+                    justify-content: center;
+                }
+            </style>
+        </center>
+            
+        </div>
+        <footer class="footer">
+            <div class = "fc">
+            <h3> 2021 </h3>
+            <h3> Tomsk Politeckhnic University</h3>
+            <h3> group:8K93</h3>
+            <h3> Danil Babinov</h3>
+            </div>
+            <style>
+                .fc{
+                    margin: 5%;
+                }
+            </style>
+        </footer>
+    </body>
+</html>
